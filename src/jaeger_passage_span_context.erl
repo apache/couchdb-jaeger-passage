@@ -16,6 +16,13 @@
 
 -include("constants.hrl").
 
+
+% Update after moving to 21+ to use uri_string
+-ifdef(OTP_RELEASE).
+-compile({nowarn_deprecated_function, {http_uri, decode, 1}}).
+-compile({nowarn_deprecated_function, {http_uri, encode, 1}}).
+-endif.
+
 %%------------------------------------------------------------------------------
 %% Exported API
 %%------------------------------------------------------------------------------
