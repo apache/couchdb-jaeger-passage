@@ -4,7 +4,7 @@ IsRebar3 = erlang:function_exported(rebar3, main, 1),
 Rebar2Deps =
   [
    {local, ".*", {git, "https://github.com/apache/couchdb-local.git", {tag, "0.2.1"}}},
-   {passage, ".*", {git, "https://github.com/apache/couchdb-passage.git", {tag, "0.2.6"}}},
+   {passage, ".*", {git, "https://github.com/apache/couchdb-passage.git", {tag, "CouchDB-0.2.6-1"}}},
    {thrift_protocol, ".*", {git, "https://github.com/apache/couchdb-thrift-protocol.git", {tag, "0.1.5"}}}
   ],
 
